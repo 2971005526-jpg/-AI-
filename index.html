@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>京旅 · 交互原型</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;background:linear-gradient(160deg,#eef2fb 0%,#f7f9fc 100%);color:#1f2430;padding:40px 20px 60px;display:flex;flex-direction:column;align-items:center}
+.wrap{width:100%;max-width:560px}
+.hero{text-align:center;margin-bottom:36px}
+.hero .badge{display:inline-block;background:#e3ebfd;color:#3b6ef5;font-size:13px;font-weight:600;padding:6px 14px;border-radius:20px;margin-bottom:16px}
+.hero h1{font-size:26px;font-weight:700;letter-spacing:.5px;margin-bottom:10px}
+.hero p{font-size:14px;color:#6b7280;line-height:1.7}
+.cards{display:flex;flex-direction:column;gap:16px}
+.card{display:block;text-decoration:none;color:inherit;background:#fff;border-radius:18px;padding:22px 22px;box-shadow:0 6px 24px rgba(30,50,110,.06);transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(30,50,110,.12)}
+.card .idx{font-size:13px;color:#9aa3b2;font-weight:600;letter-spacing:1px}
+.card h2{font-size:18px;font-weight:700;margin:6px 0 8px}
+.card p{font-size:13px;color:#6b7280;line-height:1.6}
+.card .go{margin-top:14px;display:inline-flex;align-items:center;gap:6px;color:#3b6ef5;font-size:13px;font-weight:600}
+.foot{text-align:center;margin-top:34px;font-size:12px;color:#aeb4bf;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <span class="badge">京旅 · 旅行搭子</span>
+    <h1>京旅酒旅 Agent 交互原型</h1>
+    <p>成都行程为例，展示从目的地推荐、行程规划到种草行程详情的完整体验。<br>点击下方任意版本，在手机或浏览器中体验。</p>
+  </div>
+  <div class="cards">
+    <a class="card" href="comfort.html">
+      <span class="idx">版本 01</span>
+      <h2>简约舒适版</h2>
+      <p>信息齐全场景下的完整主流程：目的地推荐 → 行程规划 → 种草行程详情 → 行程管理。</p>
+      <span class="go">进入体验 →</span>
+    </a>
+    <a class="card" href="bundle.html">
+      <span class="idx">版本 02</span>
+      <h2>机酒组合清单版</h2>
+      <p>侧重机票 + 酒店组合成单的清单式呈现，适合看成交型交互。</p>
+      <span class="go">进入体验 →</span>
+    </a>
+    <a class="card" href="incomplete.html">
+      <span class="idx">版本 03</span>
+      <h2>信息未齐场景版</h2>
+      <p>出行信息尚未补全时的引导与追问体验，展示"还差一点就能出发"的收敛路径。</p>
+      <span class="go">进入体验 →</span>
+    </a>
+  </div>
+  <div class="foot">京旅 · 交互原型 · 纯前端演示<br>建议在手机浏览器中打开，体验更接近真实</div>
+</div>
+</body>
+</html>
